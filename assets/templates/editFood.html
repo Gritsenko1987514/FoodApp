@@ -1,0 +1,37 @@
+<!--Form for the addition of a scratch, Requires: Title, Content. Optional Email option available-->
+	<div class = "form-group">
+		<label for = "scratch_Title">Food Name</label>
+		<input type = "text" class = "form-control" placeholder = "Task.taskname" ng-model = "Task.taskname"></input>
+	</div>
+
+	<div class = "form-group">
+		<label for = "scratch_content">Food review</label>
+		<input type = "date" class = "form-control" value="Task.taskdate | date:'yyyy-MM-dd' " ng-model = "Task.taskdate"></input>
+	</div>
+
+	<div class = "form-group">
+		<label for = "scratch_content">Task estimation</label>
+		<textarea type = "textarea" class = "form-control" placeholder="Task.taskpoitns" ng-model = "Task.taskpoints"></textarea>
+	</div>
+
+
+	<div class = "form-group">
+		<label for = "scratch_content">Food Location</label>
+		<textarea type = "textarea" class = "form-control"placeholder = "Task.taskestimation" ng-model = "Task.taskestimation"></textarea>
+	</div>
+
+	<div class = "form-group">
+		<label for = "scratch_content">Food category</label>
+		<textarea type = "textarea" class = "form-control" placeholder = "Task.tasksummary"  ng-model = "Task.tasksummary"></textarea>
+	</div>
+
+
+	 <p>{{user.role}}</p>
+	 <div ng-if="user.role=='admin'">
+	 <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-eye"></i>Pending</button>
+	 <button class="btn btn-sm btn-success"><i class="fa fa-fw fa-eye"></i>Success</button></div>
+
+
+	<div class = "form-group">
+		<button ng-click = "editFood()" type = "submit" class = "btn btn-primary">ADD</button>
+	</div>

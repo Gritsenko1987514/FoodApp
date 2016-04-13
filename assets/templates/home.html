@@ -1,0 +1,45 @@
+<div class="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand text-uppercase" href="#">Bounty<span class="label label-success text-capitalize">Rec</span></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="button" class="btn btn-success navbar-btn btn-circle"  data-toggle="modal" data-target="#myModal">Sign in</button></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="container">
+              <div class="card card-container">
+                      <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+                  <form class="form-signin">
+                      <span id="reauth-email" class="reauth-email"></span>
+                      <div class="error" id="error"></div>
+                      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="user.signemail" required autofocus>
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="user.signpassword" required>
+                      <button class="btn btn-lg btn-primary btn-block btn-signin" ng-click="signIn()" type="submit">Sign in</button>
+                  </form><!-- /form -->
+              </div><!-- /card-container -->
+          </div><!-- /container -->
+          </div>
+        </div>
+    </header>
+
+  </div>
